@@ -44,11 +44,11 @@
 <div class="info">
 	<h3>베이비스 트친소 v0.1.2</h3>
 	<!-- TODO: add link to twitter id. -->
-	<p><i>Designed / programmed by</i> <em>@mik__n</em></p>
+	<p><i>Designed & programmed by</i> <a href="http://x.com/mik__n"><em>@mik__n</em></a></p>
 	<p><i>Deployed on 2024-12-14</i></p>
 	<h4>주의사항</h4>
 	<ul>
-		<li>사진은 김재중만 나온 사진만 사용해주세요.</li>
+		<li>사진은 김재중만 나온 사진으로 사용해주세요.</li>
 		<li>2차 수정 및 재배포를 금지합니다.</li>
 	</ul>
 	<!-- <br /> -->
@@ -138,6 +138,11 @@
 
 		em {
 			font-weight: 500;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
 		}
 	}
 </style>

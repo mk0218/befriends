@@ -34,7 +34,7 @@
 			<div class="preview-overlay">SAMPLE</div>
 		{/if}
 	</div>
-	<div class="credit">Designed / programmed by @mik__n</div>
+	<div class="credit">Designed & programmed by @mik__n</div>
 </div>
 
 <style>

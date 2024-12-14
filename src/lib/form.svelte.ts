@@ -1,6 +1,6 @@
 const comment =
 	'베이비스 트친소 폼 v0.1.2\n\
-Designed / programmed by @mik__n\n\
+Designed & programmed by @mik__n\n\
 이 트친소표의 내용은 예시입니다. 하단의 설명을 참고해서 사용해주세요.\n\
 2차 수정 및 재배포를 금지합니다.';
 
