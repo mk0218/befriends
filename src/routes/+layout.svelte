@@ -90,6 +90,6 @@
 		left: 0;
 		width: 100vw;
 		height: calc(100vh - 60px);
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 </style>

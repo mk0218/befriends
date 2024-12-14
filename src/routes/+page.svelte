@@ -73,7 +73,7 @@
 <style>
 	.page {
 		width: 100vw;
-		height: calc(56vw + 200px);
+		height: calc(56vw + 180px);
 		display: flex;
 		flex-direction: column;
 		justify-content: baseline;
@@ -106,7 +106,7 @@
 	.info {
 		box-sizing: border-box;
 		width: 100vw;
-		min-height: calc(100% - 56vw - 200px);
+		min-height: calc(100% - 56vw - 180px);
 		background-color: rgb(235, 244, 238);
 		padding: 30px 7% 30px;
 		align-self: baseline;
