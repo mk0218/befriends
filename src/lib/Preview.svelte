@@ -34,6 +34,7 @@
 			<div class="preview-overlay">PREVIEW</div>
 		{/if}
 	</div>
+	<div class="credit">Designed / programmed by @mik__n</div>
 </div>
 
 <style>
@@ -45,6 +46,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		position: relative;
 	}
 
 	.container {
@@ -123,7 +125,7 @@
 		position: absolute;
 		top: 0;
 		left: 380px;
-		width: 500px;
+		width: 540px;
 		height: 100%;
 		box-sizing: border-box;
 		padding: 10px;
@@ -146,5 +148,15 @@
 		font-weight: 100;
 		color: rgba(91, 255, 85, 0.2);
 		transform: rotate(-18deg);
+	}
+
+	.credit {
+		font-size: 0.9em;
+		font-weight: 200;
+		font-style: italic;
+		color: rgba(255, 255, 255, 0.4);
+		position: absolute;
+		right: 10px;
+		bottom: 5px;
 	}
 </style>

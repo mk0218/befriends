@@ -15,7 +15,11 @@
 </div>
 
 <style>
-	@import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
+	@font-face {
+		font-family: 'notosanskr';
+		src: 'NotoSansKr-VariableFont_wght.ttf';
+	}
+
 	@font-face {
 		font-family: 'S-CoreDream-3Light';
 		src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
@@ -82,10 +86,10 @@
 
 	.page {
 		position: fixed;
-		overflow: hidden;
 		top: 60px; /* Below the nav */
 		left: 0;
 		width: 100vw;
 		height: calc(100vh - 60px);
+		overflow-y: scroll;
 	}
 </style>

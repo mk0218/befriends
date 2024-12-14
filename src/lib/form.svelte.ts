@@ -1,3 +1,9 @@
+const comment =
+	'베이비스 트친소 폼 v0.1.1\n\
+Designed / programmed by @mik__n\n\
+이 트친소표의 내용은 예시입니다. 하단의 설명을 참고해서 사용해주세요.\n\
+2차 수정 및 재배포를 금지합니다.';
+
 const sampleForm: {
 	[key in string]: { label: string; value: string; placeholder?: string };
 } = {
@@ -29,7 +35,7 @@ const sampleForm: {
 	etc: { label: '주의사항/기타', value: '알페스 싫어요', placeholder: '알페스 싫어요' },
 	comment: {
 		label: '하고싶은 말',
-		value: '어쩌고저쩌고',
+		value: comment,
 		placeholder: '하고싶은 말을 자유롭게 적어주세요.'
 	}
 };

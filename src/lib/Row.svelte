@@ -1,10 +1,14 @@
-<script>
-	let { label, value } = $props();
+<script lang="ts">
+	let { label, value }: { label: string; value: string } = $props();
 </script>
 
 <div class="row">
 	<span class="label">{label}</span>
-	<span class="value">{value}</span>
+	<span class="value">
+		{#each value.split('\n') as line}
+			<p>{line}</p>
+		{/each}
+	</span>
 </div>
 
 <style>
@@ -24,5 +28,14 @@
 	.value {
 		font-weight: 500;
 		flex: 2;
+		line-break: anywhere;
+	}
+
+	p {
+		margin: 0;
+
+		&:not(:first-child) {
+			margin-top: 4px;
+		}
 	}
 </style>

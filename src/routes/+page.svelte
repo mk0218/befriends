@@ -41,11 +41,39 @@
 		{/if}
 	</div>
 </div>
+<div class="info">
+	<h3>베이비스 트친소 v0.0.1</h3>
+	<!-- TODO: add link to twitter id. -->
+	<p><i>Designed / programmed by</i> <em>@mik__n</em></p>
+	<p><i>Deployed on 2024-12-14</i></p>
+	<h4>주의사항</h4>
+	<ul>
+		<li>사진은 김재중만 나온 사진만 사용해주세요.</li>
+		<li>2차 수정 및 재배포를 금지합니다.</li>
+	</ul>
+	<!-- <br /> -->
+	<h4>사용 방법</h4>
+	<ul>
+		<li>
+			만들기 또는 사용하기를 눌러 내용 입력, 생성하기를 눌러 트친소폼 미리보기를 할 수 있습니다.
+			생성된 미리보기 이미지를 저장해서 사용해주세요.
+		</li>
+		<li>초기화시 입력된 내용은 모두 삭제되고, 되돌릴 수 없습니다.</li>
+		<li>
+			양식을 수정하지 않는 한에서 빈 트친소폼 저장 후 사용이 가능하지만, 양식 입력을 통해 사용하시는
+			것을 추천합니다. (특히 닉네임 및 아이디는 꼭 입력해주세요!!)
+		</li>
+	</ul>
+	<h4>기타</h4>
+	<ul>
+		<li>버그 제보 및 건의사항은 트위터 DM으로 부탁드립니다.</li>
+	</ul>
+</div>
 
 <style>
 	.page {
 		width: 100vw;
-		height: 100%;
+		height: calc(56vw + 200px);
 		display: flex;
 		flex-direction: column;
 		justify-content: baseline;
@@ -72,6 +100,44 @@
 
 		& > :global(*) {
 			margin: 0 4px;
+		}
+	}
+
+	.info {
+		box-sizing: border-box;
+		width: 100vw;
+		min-height: calc(100% - 56vw - 200px);
+		background-color: rgb(235, 244, 238);
+		padding: 30px 7% 30px;
+		align-self: baseline;
+		font-size: 0.6em;
+		color: rgb(100, 100, 100);
+
+		ul {
+			margin: 0;
+			padding-left: 12px;
+		}
+
+		p,
+		li {
+			margin: 0;
+
+			&:not(:first-child) {
+				margin-top: 2px;
+			}
+		}
+
+		h3,
+		h4 {
+			margin: 15px 0 5px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		em {
+			font-weight: 500;
 		}
 	}
 </style>

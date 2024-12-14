@@ -56,7 +56,7 @@
 	<form>
 		<FormRow label="좋아하는 사진">
 			<input type="file" bind:this={imgInput} onchange={onImgChange} />
-			<span class="img-warn">김재중 및 본인 외의 다른 사람이 나온 사진은 사용하지 말아주세요.</span>
+			<span class="img-warn">김재중 외의 다른 사람이 나온 사진은 사용하지 말아주세요.</span>
 			{#if showImg}
 				<img src={formImg} style="width: 100%" alt="사진" />
 			{/if}
