@@ -31,10 +31,10 @@
 			{/each}
 		</div>
 		{#if !formState.submitted}
-			<div class="preview-overlay">PREVIEW</div>
+			<div class="preview-overlay">SAMPLE</div>
 		{/if}
 	</div>
-	<div class="credit">Designed / programmed by @mik__n</div>
+	<div class="credit">Designed & programmed by @mik__n</div>
 </div>
 
 <style>
@@ -61,12 +61,11 @@
 		background-color: darkseagreen;
 		width: 380px;
 		height: 100%; /* 500px */
-		overflow: hidden;
 
 		img {
-			min-width: 100%;
-			min-height: 100%;
-			transform: translate(calc((380px - 100%) / 2), calc((500px - 100%) / 2));
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 
@@ -86,7 +85,7 @@
 		bottom: 0;
 		box-sizing: border-box;
 		padding: 30px;
-		padding-top: 80px;
+		padding-top: 90px;
 
 		& > * {
 			margin-bottom: 12px;
@@ -128,9 +127,7 @@
 		width: 540px;
 		height: 100%;
 		box-sizing: border-box;
-		padding: 10px;
-		padding-left: 40px;
-		font-size: 13pt;
+		padding: 12px 12px 8px 32px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
@@ -144,7 +141,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-size: 14em;
+		font-size: 200pt;
 		font-weight: 100;
 		color: rgba(91, 255, 85, 0.2);
 		transform: rotate(-18deg);

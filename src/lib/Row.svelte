@@ -22,7 +22,7 @@
 		color: var(--babies-green);
 		width: 100px;
 		margin-right: 5px;
-		flex: 1;
+		flex: 0.8;
 	}
 
 	.value {
