@@ -42,7 +42,7 @@
 	</div>
 </div>
 <div class="info">
-	<h3>베이비스 트친소 v0.0.1</h3>
+	<h3>베이비스 트친소 v0.1.2</h3>
 	<!-- TODO: add link to twitter id. -->
 	<p><i>Designed / programmed by</i> <em>@mik__n</em></p>
 	<p><i>Deployed on 2024-12-14</i></p>
