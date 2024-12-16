@@ -109,7 +109,7 @@
 		width: 100vw;
 		min-height: calc(100% - 56vw - 180px);
 		background-color: rgb(235, 244, 238);
-		padding: 30px 7% 30px;
+		padding: 30px 7% 50px;
 		align-self: baseline;
 		font-size: 0.6em;
 		color: rgb(100, 100, 100);
