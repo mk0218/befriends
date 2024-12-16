@@ -11,7 +11,7 @@
 		font-size: 10pt;
 		background-color: rgba(0, 0, 0, 40%);
 		border-radius: 6px;
-		padding: 3px 8px;
+		padding: 4px 8px;
 		color: white;
 	}
 

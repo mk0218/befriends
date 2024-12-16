@@ -22,7 +22,7 @@
 		color: var(--babies-green);
 		width: 100px;
 		margin-right: 5px;
-		flex: 0.8;
+		flex: 0.7;
 	}
 
 	.value {
@@ -35,7 +35,7 @@
 		margin: 0;
 
 		&:not(:first-child) {
-			margin-top: 4px;
+			margin-top: 3pt;
 		}
 	}
 </style>
