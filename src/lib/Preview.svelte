@@ -39,8 +39,8 @@
 	</div>
 	<div class="appinfo">
 		Created with
-		<span class="link"> https://befriends-v3d5.vercel.app</span>
-		<span style="font-style: normal">&nbsp; | &nbsp;</span>
+		<span class="link"> befriends-mu.vercel.app </span>
+		<span style="font-style: normal">&nbsp;| </span>
 		Designed & programmed by @mik__n
 	</div>
 </div>
@@ -94,7 +94,7 @@
 		height: 40%;
 		bottom: 0;
 		box-sizing: border-box;
-		padding: 105px 10px 10px 28px;
+		padding: 110px 10px 10px 28px;
 
 		& > :last-child {
 			margin-top: 3px;

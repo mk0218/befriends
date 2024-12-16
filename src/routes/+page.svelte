@@ -42,10 +42,10 @@
 	</div>
 </div>
 <div class="info">
-	<h3>베이비스 트친소 생성기 v0.1.2</h3>
+	<h3>베이비스 트친소 생성기 v0.1.3</h3>
 	<!-- TODO: add link to twitter id. -->
 	<p><i>Designed & programmed by</i> <a href="http://x.com/mik__n"><em>@mik__n</em></a></p>
-	<p><i>Deployed on 2024-12-14</i></p>
+	<p><i>Deployed on 2024-12-16</i></p>
 	<p style="margin-top: 4px">본 사이트는 모바일에 최적화되어 있습니다.</p>
 	<h4>주의사항</h4>
 	<ul>
