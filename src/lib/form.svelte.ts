@@ -1,5 +1,5 @@
 const comment =
-	'베이비스 트친소 폼 v0.1.2\n\
+	'베이비스 트친소 생성기 (테스트 버전)\n\
 Designed & programmed by @mik__n\n\
 이 트친소표의 내용은 예시입니다. 하단의 설명을 참고해서 사용해주세요.\n\
 2차 수정 및 재배포를 금지합니다.';
@@ -32,7 +32,11 @@ const sampleForm: {
 		value: '블언블 (편하게 해주세요)',
 		placeholder: '언팔로우 / 블언블 / 블락'
 	},
-	etc: { label: '주의사항/기타', value: '알페스 싫어요', placeholder: '알페스 싫어요' },
+	etc: {
+		label: '주의사항/기타',
+		value: '알페스 싫어요.\n구독은 블언블합니다.',
+		placeholder: '자신의 지뢰나 다른 사람에게 지뢰가 될 수 있는 요소 등'
+	},
 	comment: {
 		label: '하고싶은 말',
 		value: comment,

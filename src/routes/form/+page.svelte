@@ -8,14 +8,14 @@
 	let img: HTMLImageElement | null = $state(null);
 
 	let formImg = $state('');
-	const form: { [key in string]: string } = $state({});
+	const form: { [key in string]: { value: string; placeholder?: string } } = $state({});
 
 	if (savedFormImg.loaded) {
 		showImg = true;
 		formImg = savedFormImg.img;
 	}
-	Object.entries(savedForm).forEach(([key, { value }]) => {
-		form[key] = value;
+	Object.entries(savedForm).forEach(([key, { value, placeholder }]) => {
+		form[key] = { value, placeholder };
 	});
 
 	function onImgChange() {
@@ -43,7 +43,7 @@
 			savedFormImg.loaded = true;
 		}
 
-		Object.entries(form).forEach(([key, value]) => {
+		Object.entries(form).forEach(([key, { value }]) => {
 			savedForm[key].value = value;
 		});
 
@@ -62,37 +62,46 @@
 			{/if}
 		</FormRow>
 		<FormRow label="닉네임">
-			<input type="input" bind:value={form['name']} placeholder="미키안" />
+			<input type="input" bind:value={form['name'].value} placeholder={form['name'].placeholder} />
 		</FormRow>
 		<FormRow label="트위터 아이디">
-			<input type="input" bind:value={form['id']} placeholder="mik__n" />
+			<input type="input" bind:value={form['id'].value} placeholder={form['id'].placeholder} />
 		</FormRow>
 		<FormRow label="나이">
-			<input type="input" bind:value={form['age']} placeholder="성인 / 청소년 / 비공개" />
+			<input type="input" bind:value={form['age'].value} placeholder={form['age'].placeholder} />
 		</FormRow>
 		<FormRow label="입덕 시기">
-			<input type="input" bind:value={form['since']} placeholder="2024년 5월" />
+			<input
+				type="input"
+				bind:value={form['since'].value}
+				placeholder={form['since'].placeholder}
+			/>
 		</FormRow>
 		<FormRow label="입덕 계기">
-			<textarea bind:value={form['how']} placeholder="재친구"></textarea>
+			<textarea bind:value={form['how'].value} placeholder={form['how'].placeholder}></textarea>
 		</FormRow>
 		<FormRow label="최애곡/최애앨범">
-			<textarea bind:value={form['favorite']} placeholder="One Kiss / Flower Garden"></textarea>
+			<textarea bind:value={form['favorite'].value} placeholder={form['favorite'].placeholder}
+			></textarea>
 		</FormRow>
 		<FormRow label="재중에게 한마디">
-			<textarea bind:value={form['toJJ']} placeholder="항상 고맙고 사랑해♥"></textarea>
+			<textarea bind:value={form['toJJ'].value} placeholder={form['toJJ'].placeholder}></textarea>
 		</FormRow>
 		<FormRow label="트윗 성향">
-			<textarea bind:value={form['tweet']} placeholder="사담, 타장르 이야기 많아요."></textarea>
+			<textarea bind:value={form['tweet'].value} placeholder={form['tweet'].placeholder}></textarea>
 		</FormRow>
 		<FormRow label="이별 방법">
-			<input type="input" bind:value={form['goodbye']} placeholder="언팔로우 / 블언블 / 블락" />
+			<input
+				type="input"
+				bind:value={form['goodbye'].value}
+				placeholder={form['goodbye'].placeholder}
+			/>
 		</FormRow>
 		<FormRow label="주의사항/기타">
-			<textarea bind:value={form['etc']} placeholder="알페스 싫어요"></textarea>
+			<textarea bind:value={form['etc'].value} placeholder={form['etc'].placeholder}></textarea>
 		</FormRow>
 		<FormRow label="하고싶은 말">
-			<textarea bind:value={form['comment']} placeholder="하고싶은 말을 자유롭게 적어주세요."
+			<textarea bind:value={form['comment'].value} placeholder={form['comment'].placeholder}
 			></textarea>
 		</FormRow>
 	</form>
@@ -140,13 +149,17 @@
 	input,
 	textarea {
 		margin: 5px 0;
-		padding: 4px;
+		padding: 6px;
 		box-sizing: border-box;
 		width: 100%;
 		height: 34px;
 		font-weight: 500;
 		font-family: inherit;
 		font-size: 0.9em;
+	}
+
+	textarea {
+		height: 60px;
 	}
 
 	input[type='file'] {
